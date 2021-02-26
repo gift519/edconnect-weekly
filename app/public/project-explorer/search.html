@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang ="en">
+<head>
+    <meta charset="UTF 8">
+    <title>Search page </title> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Submit</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section><h2>Search Project By</h2>
+            <form name="searchForm">
+                <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags">
+                <br><br>
+                <label for="searchType">Search By: </label><br>
+                <select name="searchType"> 
+                    <option value="Name">Name</option>
+                    <option value="Abstract">Abstract</option>
+                    <option value="Authors">Authors</option>
+                    <option value="Tags">Tags</option>
+                 </select>
+                 <br><br>
+               <input type="submit" value="Search">
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Search Result</h2>
+            <div>
+                <header><h3>Project 1</h3></header>
+                <ul>
+                    <li>Name: Project 1</li>
+                    <li>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+                    <li>Program: Computer Science </li>
+                    <li>Authors: John Doe, Jane Doe </li>    
+                    <li>Tags: #Asphyzia,#GSW</li>    
+                    <li>Year: 2018</li>      
+                </ul>
+            </div>
+        </section>             
+    </main>
+</body>   
+</html>

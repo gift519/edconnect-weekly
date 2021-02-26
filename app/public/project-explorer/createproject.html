@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang ="en">
+<head>
+    <meta charset="UTF 8">
+    <title>Create Project Page </title> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Submit</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <header><h3>Submit Project</h3></header>
+        <form name="submitProject">
+            <label for="name">Project Name: </label><br>
+            <input type="text" name="name">
+            <br><br>
+            <label for="abstract">Project Abstract: </label><br>
+            <textarea type="text" name="abstract"></textarea>
+            <br><br>
+            <label for="authors">Authors: </label><br>
+            <input type="text" name="authors">
+            <br><br>
+            <label for="tags">Tag(s): </label><br>
+            <input type="text" name="tags">            
+             <br><br>
+           <input type="submit">
+        </form>
+    </main>
+</body>
+   
+</html>
