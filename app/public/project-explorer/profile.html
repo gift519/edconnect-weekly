@@ -38,72 +38,107 @@
     </header>
     
     <main>
-        <section>
-            <h2>John Doe</h2>
-            <h3>john.doe@gmail.com</h3>
-            <ul>
-                <li>Program: Computer Science </li>
-                <li>Matric: 00/0000</li>
-                <li>Graduation Year: 2019</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Update Profile</h2>
-            <form name="updateProfile">
-                <label for="firstName">First Name: </label>
-                <input type="text" name="firstName"> 
-                <br><br>
-                <label for="lastName">Last Name: </label>
-                <input type="text" name="lastName"> 
-               <br><br>
-               <label for="email">Email Address: </label>
-               <input type="email" name="email"> 
-               <br><br>
-               <label for="matricNumber">Matric Number:</label>
-               <input type="text" name="matricNumber">
-               <br><br>
-               <label for="program">Program: </label>
-               <select name="program"> 
-                   <option value="computer_science">Computer Science</option>
-                   <option value="computer_information_systems">Computer Information Systems</option>
-                   <option value="computer_technology">Computer Technology</option>
-                </select>
-               <br><br>
-               <label for="graduationYear">Graduation Year: </label>
-               <select name="graduationYear"> 
-                <option value="2013">2013</option>
-                <option value="2014">2014</option>
-                <option value="2015">2015</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>  
-                </select>         
-                <br><br>
-               <input type="submit">    
+        <div class="container">
+            <!--style profile summary-->
+            <div class="row mt-5">
+                <h3>Ade Chucks<span class="btn btn-light">ade@edconnect.ng</span></h3>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-4 btn-light">
+                        <p>Program</p>
+                        <p>Computer Information Systems</p>
+                    </div>
+                    <div class="col-4 btn-light">
+                        <p>Matriculation Number</p>
+                        <p>33/3333</p>
+                    </div>
+                    <div class="col-4 btn-light">
+                        <p>Graduation Year</p>
+                        <p>2018</p>
+                    </div>
+                </div>
+            </div>
+            <!--Style update profile-->
+            <div class="row">
+                <h4>Update Profile</h4>
+            </div>
+            <form class="container mx-auto w-75">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName"> First Name</label>
+                        <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name">
+                    </div>
+            
+                    <div class="form-group col-md-6 ">
+                        <label for="lastName"> Last Name</label>
+                        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Your Email address">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="program">Program</label>
+                        <select name="program" class="form-control"> 
+                            <option selected>Choose...</option>
+                            <option value="computer_science" name="program">Computer Science</option>
+                            <option value="computer_information_systems" name="program">Computer Information Systems</option>
+                            <option value="computer_technology" name="program">Computer Technology</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="matricNumber">Matriculation Number</label>
+                        <input type="text" name="matricNumber" class="form-control" placeholder="e.g. 16/2020">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="graduationYear">Graduation Year: </label>
+                        <select name="graduationYear" class="form-control"> 
+                            <option selected>Choose...</option> 
+                            <option value="2013" name="graduationYear">2013</option>
+                            <option value="2014" name="graduationYear">2014</option>
+                            <option value="2015" name="graduationYear">2015</option>
+                            <option value="2016" name="graduationYear">2016</option>
+                            <option value="2017" name="graduationYear">2017</option>
+                            <option value="2018" name="graduationYear">2018</option>
+                            <option value="2019" name="graduationYear">2019</option>
+                            <option value="2020" name="graduationYear">2020</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Update Profile</button> <br><br>  
             </form>
-        </section>
-        <section>
-            <h2>Change Password</h2>
-            <form name="changePassword"> 
-                <label for="currentPassword">Current Password: </label>
-                <input type="password" name="currentPassword"> 
-                <br><br>
-                <label for="newPassword">New Password: </label>
-                <input type="password" name="newPassword"> 
-               <br><br>
-               <label for="confirmPassword">Confirm Password: </label>
-               <input type="password" name="confirmPassword"> 
-               <br><br>
-               
-               <input type="submit">
-    
-            </form>
-
-        </section>
-        
+            <!--Style change password-->
+            <div class="row">
+                <h4>Change Password</h4>
+            </div>
+            <form class="container mx-auto w-75">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="currentPassword">Current Password </label>
+                        <input type="password" name="currentPassword" class="form-control" placeholder="Current Password"> 
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="newPassword">New Password </label>
+                        <input type="password" name="newPassword" class="form-control" placeholder="Your new password"> 
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="confirmPassword">Confirm Password </label>
+                        <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm new password"> 
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Change Password</button> <br><br>
+            </form>          
+        </div>        
     </main>
+     <!--footer-->
+     <footer class="container"><br><br>
+        <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
+    </footer>
 </body>
    
 </html>

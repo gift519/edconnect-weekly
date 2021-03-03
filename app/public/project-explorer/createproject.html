@@ -38,23 +38,36 @@
     </header>
 
     <main>
-        <header><h3>Submit Project</h3></header>
-        <form name="submitProject">
-            <label for="name">Project Name: </label><br>
-            <input type="text" name="name">
-            <br><br>
-            <label for="abstract">Project Abstract: </label><br>
-            <textarea type="text" name="abstract"></textarea>
-            <br><br>
-            <label for="authors">Authors: </label><br>
-            <input type="text" name="authors">
-            <br><br>
-            <label for="tags">Tag(s): </label><br>
-            <input type="text" name="tags">            
-             <br><br>
-           <input type="submit">
-        </form>
+        <div class="container">
+            <div class="row mx-auto w-75 mt-3">
+                <h4>Submit Project</h4>
+            </div>
+
+            <form class="container mx-auto w-75">
+                <div class="form-group">
+                    <label for="name">Project Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter project name">
+                </div>
+                <div class="form-group">
+                    <label for="abstract">Project Abstract</label>
+                    <textarea type="text" name="abstract"class="form-control" id="abstract" rows="8" cols="140"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="authors">Author(s)</label>
+                    <input type="text" name="authors" class="form-control" id="authors" placeholder="Enter author names(separated by comma)">
+                </div>
+                <div class="form-group">
+                    <label for="tags">Tag(s)</label>
+                    <input type="text" name="tags" class="form-control" id="tags" placeholder="Use # to tag project with different topics(e.g, #javascript, #mongodb)">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Continue</button>
+            </form>
+        </div>        
     </main>
+    <!--footer-->
+    <footer class="container" >
+        <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
+    </footer>
 </body>
    
 </html>

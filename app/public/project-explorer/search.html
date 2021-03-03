@@ -38,38 +38,75 @@
     </header>
 
     <main>
-        <section><h2>Search Project By</h2>
-            <form name="searchForm">
-                <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags">
-                <br><br>
-                <label for="searchType">Search By: </label><br>
-                <select name="searchType"> 
-                    <option value="Name">Name</option>
-                    <option value="Abstract">Abstract</option>
-                    <option value="Authors">Authors</option>
-                    <option value="Tags">Tags</option>
-                 </select>
-                 <br><br>
-               <input type="submit" value="Search">
-
-            </form>
-        </section>
-
-        <section>
-            <h2>Search Result</h2>
-            <div>
-                <header><h3>Project 1</h3></header>
-                <ul>
-                    <li>Name: Project 1</li>
-                    <li>Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
-                    <li>Program: Computer Science </li>
-                    <li>Authors: John Doe, Jane Doe </li>    
-                    <li>Tags: #Asphyzia,#GSW</li>    
-                    <li>Year: 2018</li>      
-                </ul>
+        <div class="container mt-3">
+            <div class="row">
+                <h4>Project Galary</h4>
             </div>
-        </section>             
+            <div class="bg-light p-3">
+                <form name="searchTerm">
+                    <div class="form-row">
+                        <div class="form-group col-7">
+                            <input type="text" name="searchTerm" class="form-control form-control-lg " placeholder="Search project name, Authors, Abstract, Tags">
+                        </div>
+                        <div class="form-group ">
+                            <label class="btn btn-light"> Search By</label>
+                        </div>
+                        <div class="form-group col-2">
+                            <select name="searchType" class="form-control"> 
+                                <option value="Name">Name</option>
+                                <option value="Abstract">Abstract</option>
+                                <option value="Authors">Authors</option>
+                                <option value="Tags">Tags</option>
+                             </select>
+                        </div>
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button> <br><br> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row mt-4">
+                <h5 class="pt-3 pb-3">All Projects <span class="badge bg-light">(0 results)</span></h5>
+            </div>
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row ">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Author1, Author2</h6>
+                                <p class="card-text">Some quick example text<br>to build on the card title
+                                    <br>and make up the bulk of the card's content
+                                </p>
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Author1, Author2</h6>
+                                <p class="card-text">Some quick example text<br>to build on the card title
+                                    <br>and make up the bulk of the card's content
+                                </p>
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                        </div>         
+                    </div>                                                    
+                </div> <!--row-->     
+            </div> <!-- /container -->             
+        </div>        
     </main>
+    <!--footer-->
+    <footer class="container"><br><br>
+        <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
+    </footer>
 </body>   
 </html>
