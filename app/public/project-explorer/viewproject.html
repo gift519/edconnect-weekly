@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF 8">
     <title>View Project</title> 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
 </head>
 <body>
     <header>
@@ -38,40 +37,81 @@
         </nav>
     </header>
     <main>
-        <section>
-            <header><h3>Project 1</h3></header>
-            <a href="editproject.html">Edit Project</a>
-            <ul>
-                <li>Created By: Jane Doe</li>
-                <li>Date Created:00/00/00 </li>
-                <li>Last Updated: 01/01/0001</li>
-            </ul>            
-        </section>
+        <div class="container">
+            <div class="row mt-4">
+                <h4> Project 1</h4>
+            </div>  
+            <!--Profile Summary-->          
+            <div class="row">
+                <div class="col btn-light">
+                    <p> Created By <br> Ade Chris</p>
+                </div>
+                <div class="col btn-light">
+                    <p>Date Created <br>2020-08-30 </p>
+                </div>
+                <div class="col btn-light">
+                    <p>Last Updated <br>2020-08-30 </p>
+                </div>
+                <div class="col btn-light">
+                    <a class="btn btn-primary justify-content-end" href="editproject.html">
+                        <button class="btn btn-primary">Edit Project </button> </a>
+                 </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mt-5">Project Abstract</h4>
+                        <hr>
+                        <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, voluptate, suscipit, deserunt impedit recusandae qui est aut temporibus illum ducimus aliquam harum tempora ratione ut laudantium. Distinctio quidem mollitia saepe.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias laudantium praesentium tenetur consectetur labore ad commodi error cumque dolore odit, officia rem. Iste expedita itaque quos sequi nostrum laboriosam?
+                        </p>
+                        <form>
+                            <div class="form-group">
+                                <h5></h4><label for="comments" class="form-label"><strong>Comments</strong></label></h5>
+                                <textarea id="abstract" class="form-control" placeholder="Leave a comment"></textarea>
+                            </div>
 
-        <section>
-            <header><h3>Project Abstract</h3></header>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-                incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam<br>
-                eget felis. Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat.<br>
-                In hac habitasse platea dictumst vestibulum rhoncus est 
-                pellentesque elit. 
-            </div>            
-           
-        </section>  
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">No comments added yet</p>
+                    </div>
 
-        <section>
-            <header><h3>Project Details</h3></header>
-            <ul>
-                <li>Authors: John Doe, Jane Doe </li>    
-                <li>Tags: #Asphyzia,#GSW</li>    
-                <li>Project Files: 
-                    <a href="editproject.html">File 1</a>
-                    <a href="editproject.html">File 2</a>
-                </li>      
-            </ul>
-           
-        </section>            
+                    <div class="col-md-6">
+                        <h4 class="mt-5">Project Details</h4>
+                        <hr>
+                            
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Author(s)</h5>
+                            </div>
+                                    
+                            <div class="card-body">
+                                <p class="card-text">Ade Chris</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <a href="#" class="card-link">#web</a>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h5>Project files</h5>
+                            </div>
+                                    
+                            <div class="card-body">
+                                <p class="card-text text-center">No file uploaded yet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+               
     </main>
+    <!--footer-->
+    <footer class="container" ><br><br>
+        <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
+    </footer>
 </body>   
 </html>

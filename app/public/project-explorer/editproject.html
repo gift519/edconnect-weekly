@@ -38,40 +38,85 @@
     </header>
 
     <main>
-        <section>
-            <h3>Project 1</h3>
-            <ul>
-                <li>Created By: Jane Doe</li>
-                <li>Date Created:00/00/00 </li>
-                <li>Last Updated: 01/01/0001</li>
-            </ul>            
-        </section>
+        <div class="container">
+            <div class="row mt-4">
+                <h4> Project 1</h4>
+            </div>  
+            <!--Profile Summary-->          
+            <div class="row">
+                <div class="col btn-light">
+                    <p> Created By <br> Ade Chris</p>
+                </div>
+                <div class="col btn-light">
+                    <p>Date Created <br>2020-08-30 </p>
+                </div>
+                <div class="col btn-light">
+                    <p>Last Updated <br>2020-08-30 </p>
+                </div>
+                <div class="col btn-light">
+                    <a class="btn btn-primary justify-content-end" href="viewproject.html">
+                        <button class="btn btn-primary">View Project </button> </a>
+                 </div>
+            </div>
+            <!--Edit Product and Manage Project Files sections-->
+            <section>            
+                <div class="row">
+                    <div class="col">
+                        <h3 class="mt-5">Edit Project</h3>
+                        <hr> <!--edit product section-->
+                            <form name="editProject">
+                                <div class="form-group">
+                                    <label for="projectName">Project name</label>
+                                    <input type="text" class="form-control" name="projectName" placeholder="Project 1">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="abstract">Project abstract</label>
+                                    <textarea type ="text" name="abstract" class="form-control" rows="7" cols="7" placeholder="Project 1 is a very interesting topic"></textarea>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="authors">Author(s)</label>
+                                    <input type="text" class="form-control" name="authors" placeholder="Ade Chris">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="tags">Tag(s)</label>
+                                    <input type="text" class="form-control" name="tags" placeholder="#web">
+                                </div>
 
-        <section>
-            <h3>Edit Project</h3>
-            <form name="editProject">
-                <label for="name">Project Name: </label><br>
-                <input type="text" name="name">
-                <br><br>
-                <label for="abstract">Project Abstract: </label><br>
-                <textarea type="text" name="abstract"></textarea>
-                <br><br>
-                <label for="authors">Authors: </label><br>
-                <input type="text" name="authors">
-                <br><br>
-                <label for="tags">Tag(s): </label><br>
-                <input type="text" name="tags">            
-                <br><br>
-                <label for="projectFile">Upload File </label><br>
-                <input type="file" name="projectFile">            
-                <br><br>
-
-               <input type="submit">
-            </form>
-        </section>             
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </form>
+                    </div>
+                
+                    <div class="col">
+                        <h3 class="mt-5">Manage Project files</h3>
+                        <hr> <!--manage product section-->
+                            <form>
+                                <div class="form-group"> 
+                                    <div class="custom-file mt-3">
+                                      <input type="file" class="custom-file-input" id="customFile">
+                                      <label class="custom-file-label" for="customFile">Click to open file browser</label>
+                                    </div>                          
+                                <hr>
+                            </form>
+                                <!--project files section-->                    
+                                <div class="card">
+                                    <div class="card-header">
+                                      <h5>Project files</h5>
+                                    </div>                                    
+                                    <div class="card-body">
+                                      <p class="card-text text-center">No file uploaded yet</p>
+                                    </div>
+                                </div>   
+                    </div>
+                </div>
+            </section>             
+        </div>
+                
     </main>
     <!--footer-->
-    <footer class="container" >
+    <footer class="container" ><br><br>
         <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
     </footer>
 </body>   
